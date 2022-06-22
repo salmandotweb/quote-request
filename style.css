@@ -11,13 +11,8 @@
 	text-decoration: none;
 }
 
-html {
-	font-size: 62.5%;
-}
-
 body {
 	font-family: "Poppins", sans-serif;
-	font-size: 1.6rem;
 	background: var(--eee);
 	color: var(--black);
 }
@@ -30,47 +25,53 @@ body {
 	justify-content: center;
 	min-height: 100vh;
 	width: 100%;
-	padding: 5rem 0;
+	padding: 3rem 0;
 }
 .template {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
 	justify-content: center;
-	width: 60rem;
+	width: 40rem;
 	border: 0.1rem solid #bbb;
 }
 .header {
-	background: #00a79d;
+	background: #253d4e;
 	color: #fff;
 	width: 100%;
-	padding: 1rem 3rem;
-	font-size: 1.4rem;
+	padding: 1rem 2rem;
+	font-size: 1rem;
 }
 .info {
 	display: flex;
 	align-items: center;
 	justify-content: space-between;
 	width: 100%;
-	padding: 1rem 3rem;
+	padding: 1rem 2rem;
+}
+.logo {
+	width: 10rem;
+}
+.logo > img {
+	width: 100%;
 }
 .number {
-	color: #00a79d;
+	color: #253d4e;
 	font-weight: 600;
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 .email {
-	color: #00a79d;
+	color: #253d4e;
 	font-weight: 600;
-	font-size: 1.5rem;
+	font-size: 1rem;
 }
 .inputsContainer {
 	width: 100%;
-	padding: 1rem 3rem;
+	padding: 1rem 2rem;
 }
 .inputsContainer > .input {
 	width: 100%;
-	margin-bottom: 1rem;
+	margin-bottom: 0.6rem;
 }
 .input > .label {
 	font-weight: 600;
@@ -84,11 +85,11 @@ body {
 	padding: 0.5rem 1rem;
 }
 .footer {
-	background: #00a79d;
+	background: #253d4e;
 	color: #fff;
-	padding: 2rem 3rem;
+	padding: 1rem 2rem;
 	width: 100%;
-	font-size: 1.4rem;
+	font-size: 1rem;
 }
 
 @media screen and (max-width: 596px) {
