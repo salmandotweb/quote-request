@@ -1,238 +1,791 @@
 <!DOCTYPE html>
-<html lang="en">
+<html>
 	<head>
-		<meta charset="UTF-8" />
+		<title></title>
+		<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1" />
 		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
-		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-		<link rel="preconnect" href="https://fonts.googleapis.com" />
-		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-		<link
-			href="https://fonts.googleapis.com/css2?family=Montserrat:wght@100;200;300;400;500;600;700;800;900&family=Poppins:wght@100;200;300;400;500;600;700;800;900&display=swap"
-			rel="stylesheet"
-		/>
-		<title>New Quote Request</title>
-	</head>
-	<body>
-		<div
-			style="
-				display: flex;
-				align-items: center;
-				justify-content: center;
-				min-height: 100vh;
-				width: 100%;
-				font-family: Poppins, sans-serif;
-				overflow: hidden;
-			"
-		>
-			<div
-				style="
+		<style type="text/css">
+			@media screen {
+				@font-face {
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 400;
+					src: local("Lato Regular"), local("Lato-Regular"),
+						url(https://fonts.gstatic.com/s/lato/v11/qIIYRU-oROkIk8vfvxw6QvesZW2xOQ-xsNqO47m55DA.woff)
+							format("woff");
+				}
+
+				@font-face {
+					font-family: "Lato";
+					font-style: normal;
+					font-weight: 700;
+					src: local("Lato Bold"), local("Lato-Bold"),
+						url(https://fonts.gstatic.com/s/lato/v11/qdgUG4U09HnJwhYI-uK18wLUuEpTyoUstqEm5AMlJo4.woff)
+							format("woff");
+				}
+
+				@font-face {
+					font-family: "Lato";
+					font-style: italic;
+					font-weight: 400;
+					src: local("Lato Italic"), local("Lato-Italic"),
+						url(https://fonts.gstatic.com/s/lato/v11/RYyZNoeFgb0l7W3Vu1aSWOvvDin1pK8aKteLpeZ5c0A.woff)
+							format("woff");
+				}
+
+				@font-face {
+					font-family: "Lato";
+					font-style: italic;
+					font-weight: 700;
+					src: local("Lato Bold Italic"), local("Lato-BoldItalic"),
+						url(https://fonts.gstatic.com/s/lato/v11/HkF_qI1x_noxlxhrhMQYELO3LdcAZYWl9Si6vvxL-qU.woff)
+							format("woff");
+				}
+			}
+
+			/* CLIENT-SPECIFIC STYLES */
+			body,
+			table,
+			td,
+			a {
+				-webkit-text-size-adjust: 100%;
+				-ms-text-size-adjust: 100%;
+			}
+
+			img {
+				-ms-interpolation-mode: bicubic;
+			}
+
+			/* RESET STYLES */
+			img {
+				border: 0;
+				height: auto;
+				line-height: 100%;
+				outline: none;
+				text-decoration: none;
+				width: 12rem;
+			}
+
+			table {
+				border-collapse: collapse !important;
+			}
+
+			body {
+				height: 100% !important;
+				margin: 0 !important;
+				padding: 0 !important;
+				width: 100% !important;
+			}
+
+			/* iOS BLUE LINKS */
+			a[x-apple-data-detectors] {
+				color: inherit !important;
+				text-decoration: none !important;
+				font-size: inherit !important;
+				font-family: inherit !important;
+				font-weight: inherit !important;
+				line-height: inherit !important;
+			}
+
+			/* MOBILE STYLES */
+			@media screen and (max-width: 600px) {
+				h1 {
+					font-size: 25px !important;
+					line-height: 25px !important;
+				}
+				.table-mobile {
 					display: flex;
-					flex-direction: column;
-					align-items: center;
-					justify-content: center;
-					width: 45rem;
-					overflow: hidden;
-					border: 0.1rem solid #bbb;
-				"
-			>
-				<div
-					style="background: #253d4e; color: #fff; width: 100%; font-size: 1rem"
-				>
-					<h1 style="margin-left: 2rem">New Quote Request</h1>
-				</div>
-				<div
-					style="
-						display: flex;
-						align-items: center;
-						justify-content: space-between;
-						width: 100%;
-						padding: 1rem 2rem;
-					"
-				>
-					<div>
-						<p
-							style="
-								color: #253d4e;
-								font-weight: 600;
-								font-size: 1rem;
-								padding: 0 1rem;
-							"
-						>
-							0208 252 8471
-						</p>
-						<p
-							style="
-								color: #253d4e;
-								font-weight: 600;
-								font-size: 1rem;
-								padding: 0 1rem;
-							"
-						>
-							info@printedcarrierbags.co.uk
-						</p>
-					</div>
-					<div style="width: 10rem; padding: 0 1rem">
-						<img style="width: 100%" src="Images/site-logo.svg" alt="" />
-					</div>
-				</div>
-				<div style="width: 100%">
-					<div style="width: 100%; margin-bottom: 0.6rem">
-						<div
-							style="
-								font-weight: 600;
-								color: #000;
-								background: #e6e6e6;
-								width: 100%;
-								padding: 0.5rem 1rem;
-							"
-						>
-							Name
-						</div>
-						<p style="width: 100%; padding: 0.5rem 1rem">Asif Shabbir</p>
-					</div>
-					<div>
-						<div
-							style="
-								font-weight: 600;
-								color: #000;
-								background: #e6e6e6;
-								width: 100%;
-								padding: 0.5rem 1rem;
-							"
-						>
-							Email Address
-						</div>
-						<p style="width: 100%; padding: 0.5rem 1rem">hello@webbuds.co.uk</p>
-					</div>
-					<div>
-						<div
-							style="
-								font-weight: 600;
-								color: #000;
-								background: #e6e6e6;
-								width: 100%;
-								padding: 0.5rem 1rem;
-							"
-						>
-							Phone
-						</div>
-						<p style="width: 100%; padding: 0.5rem 1rem">07401 81092</p>
-					</div>
-					<div>
-						<div
-							style="
-								font-weight: 600;
-								color: #000;
-								background: #e6e6e6;
-								width: 100%;
-								padding: 0.5rem 1rem;
-							"
-						>
-							Product
-						</div>
-						<p style="width: 100%; padding: 0.5rem 1rem">
-							Twisted Handle Paper Bag
-						</p>
-					</div>
-					<div>
-						<div
-							style="
-								font-weight: 600;
-								color: #000;
-								background: #e6e6e6;
-								width: 100%;
-								padding: 0.5rem 1rem;
-							"
-						>
-							Bag Size
-						</div>
-						<p style="width: 100%; padding: 0.5rem 1rem">
-							320mm x + 130mm Bottom Gusset
-						</p>
-					</div>
-					<div>
-						<div
-							style="
-								font-weight: 600;
-								color: #000;
-								background: #e6e6e6;
-								width: 100%;
-								padding: 0.5rem 1rem;
-							"
-						>
-							Bag Color
-						</div>
-						<p style="width: 100%; padding: 0.5rem 1rem">Black</p>
-					</div>
-					<div>
-						<div
-							style="
-								font-weight: 600;
-								color: #000;
-								background: #e6e6e6;
-								width: 100%;
-								padding: 0.5rem 1rem;
-							"
-						>
-							Print Colot
-						</div>
-						<p style="width: 100%; padding: 0.5rem 1rem">
-							Print the same design on both sides
-						</p>
-					</div>
-					<div>
-						<div
-							style="
-								font-weight: 600;
-								color: #000;
-								background: #e6e6e6;
-								width: 100%;
-								padding: 0.5rem 1rem;
-							"
-						>
-							Front of Bag
-						</div>
-						<p style="width: 100%; padding: 0.5rem 1rem">2 Colors</p>
-					</div>
-					<div>
-						<div
-							style="
-								font-weight: 600;
-								color: #000;
-								background: #e6e6e6;
-								width: 100%;
-								padding: 0.5rem 1rem;
-							"
-						>
-							Back of Bag
-						</div>
-						<p style="width: 100%; padding: 0.5rem 1rem">2 Colors</p>
-					</div>
-					<div>
-						<div
-							style="
-								font-weight: 600;
-								color: #000;
-								background: #e6e6e6;
-								width: 100%;
-								padding: 0.5rem 1rem;
-							"
-						>
-							Additional Info
-						</div>
-						<p style="width: 100%; padding: 0.5rem 1rem">
-							Message (this should be text area)
-						</p>
-					</div>
-				</div>
-				<footer
-					style="background: #253d4e; color: #fff; width: 100%; font-size: 1rem"
-				>
-					<p style="padding: 0.5rem 1rem">
-						&copy; Printed Carrier Bags Ltd. All rights reserved.
-					</p>
-				</footer>
-			</div>
-		</div>
+					flex-direction: column-reverse;
+				}
+				img {
+					width: 14.5rem;
+					margin: 30px 0 0 0;
+				}
+			}
+
+			/* ANDROID CENTER FIX */
+			div[style*="margin: 16px 0;"] {
+				margin: 0 !important;
+			}
+		</style>
+	</head>
+
+	<body
+		style="
+			background-color: #f4f4f4;
+			margin: 0 !important;
+			padding: 0 !important;
+		"
+	>
+		<!-- HIDDEN PREHEADER TEXT -->
+		<table border="0" cellpadding="0" cellspacing="0" width="100%">
+			<!-- LOGO -->
+			<tr>
+				<td align="center">
+					<table
+						border="0"
+						cellpadding="0"
+						cellspacing="0"
+						width="100%"
+						style="max-width: 600px"
+					>
+						<tr>
+							<td
+								align="center"
+								valign="top"
+								style="padding: 40px 10px 40px 10px"
+							></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center" style="padding: 0px 10px 0px 10px">
+					<table
+						border="0"
+						cellpadding="0"
+						cellspacing="0"
+						width="100%"
+						style="max-width: 600px"
+					>
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								valign="left"
+								style="
+									padding: 0px 20px;
+									border-radius: 4px 4px 0px 0px;
+									color: #fff;
+									background: #253d4e;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 20px;
+									font-weight: 400;
+									letter-spacing: 4px;
+									line-height: 48px;
+								"
+							>
+								<h1 style="font-size: 30px; font-weight: 600; margin: 2">
+									New Quote Request
+								</h1>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr>
+				<td align="center" style="padding: 0px 10px 0px 10px">
+					<table
+						border="0"
+						cellpadding="0"
+						cellspacing="0"
+						width="100%"
+						style="max-width: 600px"
+					>
+						<tr class="table-mobile">
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								valign="left"
+								style="
+									padding: 20px 20px;
+									border-radius: 4px 4px 0px 0px;
+									color: #253d4e;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 15px;
+									font-weight: 400;
+								"
+							>
+								<h1 style="font-size: 15px; font-weight: 600; margin: 1">
+									0208 252 8471
+								</h1>
+								<h1 style="font-size: 15px; font-weight: 600; margin: 1">
+									info@printedcarrierbags.co.uk
+								</h1>
+							</td>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								valign="left"
+								style="
+									padding: 0px 20px;
+									border-radius: 4px 4px 0px 0px;
+									color: #00a79d;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 20px;
+									font-weight: 400;
+								"
+							>
+								<img
+									src="https://www.devpaper.webdevholdsite.co.uk/public/assets/imgs/site-logo.svg"
+									alt="logo"
+								/>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+
+			<tr>
+				<td bgcolor="#f4f4f4" align="center" style="padding: px 10px 0px 10px">
+					<table
+						border="0"
+						cellpadding="0"
+						cellspacing="0"
+						width="100%"
+						style="max-width: 600px"
+					>
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 600;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 10px 20px;
+										color: #000;
+										background: #e6e6e6;
+									"
+								>
+									Name
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 500;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 0px 30px;
+										color: #000;
+										background: #fff;
+									"
+								>
+									Asif Shabbir
+								</p>
+							</td>
+						</tr>
+						<!-- 2nd -->
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 600;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 10px 20px;
+										color: #000;
+										background: #e6e6e6;
+									"
+								>
+									Email Address
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 500;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 0px 30px;
+										color: #000;
+										background: #fff;
+									"
+								>
+									hello@webbuds.co.uk
+								</p>
+							</td>
+						</tr>
+						<!-- 3rd -->
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 600;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 10px 20px;
+										color: #000;
+										background: #e6e6e6;
+									"
+								>
+									Phone
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 500;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 0px 30px;
+										color: #000;
+										background: #fff;
+									"
+								>
+									07401 81092
+								</p>
+							</td>
+						</tr>
+						<!-- 4th -->
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 600;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 10px 20px;
+										color: #000;
+										background: #e6e6e6;
+									"
+								>
+									Product
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 500;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 0px 30px;
+										color: #000;
+										background: #fff;
+									"
+								>
+									Twisted Handle Paper Bag
+								</p>
+							</td>
+						</tr>
+						<!-- 5th -->
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 600;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 10px 20px;
+										color: #000;
+										background: #e6e6e6;
+									"
+								>
+									Bag Size
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 500;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 0px 30px;
+										color: #000;
+										background: #fff;
+									"
+								>
+									320mm x + 130mm Bottom Gusset
+								</p>
+							</td>
+						</tr>
+						<!-- 6th -->
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 600;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 10px 20px;
+										color: #000;
+										background: #e6e6e6;
+									"
+								>
+									Bag Colour
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 500;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 0px 30px;
+										color: #000;
+										background: #fff;
+									"
+								>
+									Black
+								</p>
+							</td>
+						</tr>
+						<!-- 7th -->
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 600;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 10px 20px;
+										color: #000;
+										background: #e6e6e6;
+									"
+								>
+									Print Colour
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 500;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 0px 30px;
+										color: #000;
+										background: #fff;
+									"
+								>
+									Print the same design on both sides
+								</p>
+							</td>
+						</tr>
+						<!-- 8th -->
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 600;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 10px 20px;
+										color: #000;
+										background: #e6e6e6;
+									"
+								>
+									Front of bag
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 500;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 0px 30px;
+										color: #000;
+										background: #fff;
+									"
+								>
+									2 Colours
+								</p>
+							</td>
+						</tr>
+						<!-- 9th -->
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 600;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 10px 20px;
+										color: #000;
+										background: #e6e6e6;
+									"
+								>
+									Back of bag
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 500;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 0px 30px;
+										color: #000;
+										background: #fff;
+									"
+								>
+									2 Colours
+								</p>
+							</td>
+						</tr>
+						<!-- 10th -->
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 600;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 10px 20px;
+										color: #000;
+										background: #e6e6e6;
+									"
+								>
+									Additional info
+								</p>
+							</td>
+						</tr>
+						<tr>
+							<td
+								bgcolor="#ffffff"
+								align="left"
+								style="
+									padding: 10px 20px 50px 20px;
+									width: 100%;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 500;
+								"
+							>
+								<p
+									style="
+										margin: 0;
+										padding: 0px 30px;
+										color: #000;
+										background: #fff;
+									"
+								>
+									Message (this should be text area)
+								</p>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td bgcolor="#f4f4f4" align="center">
+					<table
+						border="0"
+						cellpadding="0"
+						cellspacing="0"
+						width="100%"
+						style="max-width: 600px"
+					>
+						<tr>
+							<td
+								bgcolor="#253D4E"
+								align="center"
+								style="
+									padding: 20px 30px 20px 30px;
+									border-radius: 4px 4px 4px 4px;
+									color: #fff;
+									font-family: 'Lato', Helvetica, Arial, sans-serif;
+									font-size: 18px;
+									font-weight: 400;
+									line-height: 25px;
+								"
+							>
+								<h2
+									style="
+										font-size: 20px;
+										font-weight: 400;
+										color: #fff;
+										margin: 0;
+									"
+								>
+									© Printed Carrier Bags. All Rights Reserved.
+								</h2>
+							</td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+			<tr>
+				<td align="center">
+					<table
+						border="0"
+						cellpadding="0"
+						cellspacing="0"
+						width="100%"
+						style="max-width: 600px"
+					>
+						<tr>
+							<td
+								align="center"
+								valign="top"
+								style="padding: 40px 10px 40px 10px"
+							></td>
+						</tr>
+					</table>
+				</td>
+			</tr>
+		</table>
 	</body>
 </html>
